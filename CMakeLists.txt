@@ -38,6 +38,8 @@ else()
     else()
         add_executable(remoteControl
             ${PROJECT_SOURCES}
+            png/noSound.png
+            png/speakers.png
         )
     endif()
 endif()
