@@ -6,30 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>241</width>
-    <height>680</height>
+    <width>532</width>
+    <height>673</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
-  <property name="minimumSize">
-   <size>
-    <width>241</width>
-    <height>680</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>241</width>
-    <height>680</height>
-   </size>
+  <property name="font">
+   <font>
+    <kerning>false</kerning>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Remote Control</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>png/speakers.png</normaloff>png/speakers.png</iconset>
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonTextBesideIcon</enum>
@@ -38,8 +35,8 @@
    <property name="font">
     <font>
      <pointsize>20</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
+     <kerning>false</kerning>
     </font>
    </property>
    <widget class="QWidget" name="gridLayoutWidget">
@@ -124,10 +121,10 @@
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>241</width>
-      <height>501</height>
+      <x>20</x>
+      <y>30</y>
+      <width>239</width>
+      <height>411</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout0_9">
@@ -325,27 +322,30 @@
        </property>
       </widget>
      </item>
-     <item row="12" column="1">
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>png/speakers.png</normaloff>png/speakers.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>65</width>
-         <height>65</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>340</y>
+      <width>75</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Icon.qrc">
+      <normaloff>:/png/volume-down.png</normaloff>:/png/volume-down.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -353,13 +353,15 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>241</width>
-     <height>21</height>
+     <width>532</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="Icon.qrc"/>
+ </resources>
  <connections/>
 </ui>
