@@ -3,5 +3,9 @@
     <qresource prefix="/">
         <file>png/volume-down.png</file>
         <file>png/volume-up.png</file>
+        <file>png/icon-add.png</file>
+        <file>png/icon-minus6.png</file>
+        <file>png/pointing-down.png</file>
+        <file>png/pointing-up.png</file>
     </qresource>
 </RCC>
