@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "QTime"
+#include "QElapsedTimer"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,15 +23,24 @@ public slots:
     void volMinus();
     void channelAdd();
     void channelMinus();
-    void stopTimer();
-    void button1start();
+    void button1();
+    void button2();
+    void button3();
+    void button4();
+    void button5();
+    void button6();
+    void button7();
+    void button8();
+    void button9();
+    void button0();
 
 private:
     Ui::MainWindow *ui;
     int volume;
     int channel;
     bool volOn;
-    QTime t;
+    QElapsedTimer timer;
+    void addButVol(int b);
 
 };
 #endif // MAINWINDOW_H

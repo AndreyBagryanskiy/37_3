@@ -47,7 +47,6 @@
    <property name="font">
     <font>
      <pointsize>20</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
      <kerning>false</kerning>
     </font>
@@ -108,8 +107,11 @@
        <property name="digitCount">
         <number>3</number>
        </property>
+       <property name="mode">
+        <enum>QLCDNumber::Dec</enum>
+       </property>
        <property name="segmentStyle">
-        <enum>QLCDNumber::Flat</enum>
+        <enum>QLCDNumber::Filled</enum>
        </property>
        <property name="intValue" stdset="0">
         <number>1</number>
@@ -139,101 +141,11 @@
      <rect>
       <x>5</x>
       <y>0</y>
-      <width>239</width>
+      <width>231</width>
       <height>481</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout0_9">
-     <item row="10" column="1">
-      <widget class="QPushButton" name="button8">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>8</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="2">
-      <widget class="QPushButton" name="button9">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>9</string>
-       </property>
-      </widget>
-     </item>
-     <item row="11" column="1">
-      <widget class="QPushButton" name="button0">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>60</width>
-         <height>60</height>
-        </size>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="button2">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>2</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="0">
-      <widget class="QPushButton" name="button7">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>7</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QPushButton" name="button1">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>1</string>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="2">
       <widget class="QPushButton" name="button3">
        <property name="sizePolicy">
@@ -247,8 +159,8 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
-      <widget class="QPushButton" name="button6">
+     <item row="12" column="2">
+      <widget class="QPushButton" name="buttonVolMinus">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -256,33 +168,17 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>6</string>
+        <string/>
        </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QPushButton" name="button5">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
+       <property name="icon">
+        <iconset resource="Icon.qrc">
+         <normaloff>:/png/icon-minus6.png</normaloff>:/png/icon-minus6.png</iconset>
        </property>
-       <property name="text">
-        <string>5</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QPushButton" name="button4">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>4</string>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
        </property>
       </widget>
      </item>
@@ -309,8 +205,47 @@
        </property>
       </widget>
      </item>
-     <item row="12" column="0">
-      <widget class="QPushButton" name="buttonChannelDown">
+     <item row="3" column="0">
+      <widget class="QPushButton" name="button4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="button2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QPushButton" name="button9">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QPushButton" name="buttonVolAdd">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -322,7 +257,7 @@
        </property>
        <property name="icon">
         <iconset resource="Icon.qrc">
-         <normaloff>:/png/pointing-down.png</normaloff>:/png/pointing-down.png</iconset>
+         <normaloff>:/png/icon-add.png</normaloff>:/png/icon-add.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -359,8 +294,8 @@
        </property>
       </widget>
      </item>
-     <item row="11" column="2">
-      <widget class="QPushButton" name="buttonVolAdd">
+     <item row="10" column="0">
+      <widget class="QPushButton" name="button7">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -368,22 +303,89 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="Icon.qrc">
-         <normaloff>:/png/icon-add.png</normaloff>:/png/icon-add.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>50</width>
-         <height>50</height>
-        </size>
+        <string>7</string>
        </property>
       </widget>
      </item>
-     <item row="12" column="2">
-      <widget class="QPushButton" name="buttonVolMinus">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="button1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QPushButton" name="button0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="button6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="button5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QPushButton" name="button8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QPushButton" name="buttonChannelDown">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -395,7 +397,7 @@
        </property>
        <property name="icon">
         <iconset resource="Icon.qrc">
-         <normaloff>:/png/icon-minus6.png</normaloff>:/png/icon-minus6.png</iconset>
+         <normaloff>:/png/pointing-down.png</normaloff>:/png/pointing-down.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -414,7 +416,7 @@
      <x>0</x>
      <y>0</y>
      <width>240</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -506,9 +508,9 @@
   </connection>
   <connection>
    <sender>button1</sender>
-   <signal>pressed()</signal>
+   <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>button1start()</slot>
+   <slot>button1()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>47</x>
@@ -517,6 +519,150 @@
     <hint type="destinationlabel">
      <x>2</x>
      <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-8</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>258</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button6()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button7()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button8</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button8()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button9</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button9()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button0</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>button0()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>394</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>272</x>
+     <y>408</y>
     </hint>
    </hints>
   </connection>
@@ -544,7 +690,15 @@
   <slot>volOff()</slot>
   <slot>channelAdd()</slot>
   <slot>channelMinus()</slot>
-  <slot>button1start()</slot>
-  <slot>button1stop()</slot>
+  <slot>button1()</slot>
+  <slot>button2()</slot>
+  <slot>button3()</slot>
+  <slot>button4()</slot>
+  <slot>button5()</slot>
+  <slot>button6()</slot>
+  <slot>button7()</slot>
+  <slot>button8()</slot>
+  <slot>button9()</slot>
+  <slot>button0()</slot>
  </slots>
 </ui>
